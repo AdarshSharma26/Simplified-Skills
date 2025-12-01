@@ -1,0 +1,285 @@
+@import "../../../helper/index";
+
+.contact-container{
+  padding: 40px;
+  padding-top: 0;
+}
+
+.cover-container-padding{
+  padding: 1rem;
+}
+
+.contact-cover {
+background-image: url("../../../images/contactcover.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+object-fit: cover;
+margin-bottom: 40px;
+text-align: center;
+padding-top: 4rem;
+justify-content: center;
+display: flex;
+position: relative;
+min-height: 550px;
+margin-top: 1rem;
+border-radius: 20px;
+width: 100%;
+height: 100%;
+}
+
+.contact-cover-img {
+  position: absolute;
+
+  right: -1rem;
+  top: -1rem;
+  img {
+    width: 160px;
+    height: 181px;
+    border-radius: 50%;
+  }
+}
+
+.contact-cover-img-teacher {
+  position: absolute;
+  left: -1rem;
+  top: 24rem;
+  img {
+    width: 160px;
+    height: 181px;
+    border-radius: 50%;
+  }
+
+  @include sm-down{
+
+  }
+}
+
+.contact-cover-desc {
+
+  div{
+  @include md-down{
+    display: flex;
+    flex-direction: column;
+  }
+  }
+}
+
+.contactcover {
+  margin-bottom: 30px;
+}
+
+.cover-text {
+  color: #ffffff;
+}
+
+.contact-vision {
+  background-color: #0b5effd4;
+  border-radius: 20px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.contact-vision-second {
+  background-color: #0f2950;
+  border-radius: 20px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.cover-description {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+.contact-our-vision {
+  background-color: #0D5EF4;
+  text-align: center;
+  padding-top: 5rem;
+  border-radius: 20px;
+  max-width: 600px;
+  box-shadow: -18px 14px 12.4px -3px rgba(0, 0, 0, 0.25);
+  @include md-down {
+    max-width: fit-content;
+    padding: 5rem;
+  }
+
+  .contact-our-vision-text {
+    font-size: 32px;
+    color: #f9b121;
+    margin-bottom: 20px;
+  }
+
+  .contact-our-vision-para {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.contact-our-vision-second {
+  background-color: #2e4567;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 5rem;pu
+  border-radius: 20px;
+  max-width: 600px;
+  box-shadow: -18px 14px 12.4px -3px rgba(0, 0, 0, 0.25);
+   @include md-down {
+    max-width: fit-content;
+    padding: 5rem;
+  }
+
+  .contact-our-vision-text {
+    font-size: 32px;
+    color: #f9b121;
+    margin-bottom: 20px;
+  }
+
+  .contact-our-vision-para {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+
+.contact-children-container {
+  display: flex;
+  padding-top: 25px;
+  gap: 25px;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: row;
+
+  @include md-down{
+    flex-direction: column;
+  }
+}
+
+.contact-values {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .values-text {
+    color: #0D5EF4;
+  }
+}
+
+.contact-values-container {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  justify-content: space-around;
+  margin-bottom: 45px;
+  flex-direction: row;
+
+  @include lmd-down{
+    flex-direction: column;
+  }
+}
+
+.contact-text > p {
+  font-size: 36px;
+  color: #f9b121;
+  text-align: center;
+}
+
+.contact-clasroom {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  justify-content: space-evenly;
+  position: relative;
+  flex-direction: row;
+
+  img {
+    width: 467px;
+    position: relative;
+  }
+
+  p {
+    font-size: 25px;
+    width: 675px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+      @include md-down {
+      min-width: 300px;
+      flex-direction: column;
+    }
+}
+
+.team-small-container {
+  width: 700px;
+  height: 464px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+}
+
+.our-team-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  flex-direction: row;
+
+  @include md-down{
+    flex-direction: column;
+  }
+}
+
+.our-team-container-reverse {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  flex-direction: row;
+
+  @include md-down{
+    flex-direction: column-reverse;
+  }
+}
+
+.our-team-description {
+  max-width: 700px;
+  .title {
+    color: #0D5EF4;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 200;
+  }
+}
+
+.cover-text-header {
+  color: #f8a401;
+  margin-right: 5px;
+}
+
+.contact-clasroom-img1 {
+  width: 172px;
+  height: 172px;
+  position: absolute;
+  left: 23rem;
+  top: 1rem;
+}
+
+.contact-clasroom-img2 {
+  width: 172px;
+  height: 172px;
+  position: absolute;
+  top: 20rem;
+  left: 54rem;
+}

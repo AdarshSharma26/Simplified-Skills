@@ -1,0 +1,24 @@
+@import "../../helper/index";
+
+.bubble-color{
+    height: 278px;
+    border-radius: 46px;
+    padding: 10px;
+    color: #ffff;
+    max-width: 170px;
+
+    @include md-down{
+        max-width: fit-content;
+        min-width: 300px;
+    }
+
+    .firstText{
+        font-size: 100px;
+    }
+    .secondText{
+        font-size: 24px;
+    }
+    .thirdText{
+        font-size: 15px;
+    }
+}

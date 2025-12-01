@@ -1,0 +1,28 @@
+.details-card{
+    display: flex;
+    align-items: center;
+    width: 392px;
+    height: 234px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 100px;
+    padding: 20px;
+
+    .details-card-content{
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+            color : #000000
+        }
+
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #797C8B;
+        }
+    }
+}
+

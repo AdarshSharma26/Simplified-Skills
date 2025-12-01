@@ -1,0 +1,193 @@
+@import "../../../helper/index";
+
+.assessmentVector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.assessment-card {
+  min-width: 200px;
+  height: 250px;
+}
+
+.assessment-background {
+  background-image: url("../../../images/CareerAssessmentBG.png");
+  background-position: top;
+}
+
+.assessmnet-bottom-bg {
+  padding-top: 75px;
+}
+
+.assessment-category-card {
+  min-width: 300px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  @include xl-down {
+    min-width: 200px;
+  }
+}
+
+.assessment-category-container {
+  @include lmd-down {
+    flex-direction: column;
+  }
+}
+
+.selectedCategory {
+  background-color: #fcb33e;
+}
+
+.details-card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+
+  @include xl-down {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  }
+}
+
+.details-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 900;
+  color: #fbb038;
+  text-align: center;
+}
+
+.details-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.details-conetent-container {
+  padding: 50px;
+}
+
+.exposure-content {
+  display: flex;
+
+  @include xl-down {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 600px;
+  }
+
+  h3 {
+    font-size: 64px;
+    font-weight: 900;
+    color: #fbb038;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .exposure-content-text {
+    width: 1200px;
+    background-color: #fff;
+    height: 600px;
+    padding: 50px;
+    border-radius: 50px;
+    margin: auto;
+
+    @include xl-down {
+      margin-top: 100px;
+      width: 800px;
+    }
+
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.assessment-screenshot {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin-top: 5rem;
+  gap: 5rem;
+
+  @include xl-down {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+.assessment-focus-text {
+  display: flex;
+  gap: 20px;
+
+  &> :first-child {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 800;
+    color: #1078e7;
+  }
+
+  &> :last-child {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 800;
+  }
+
+  @include md-down {
+    flex-direction: column;
+  }
+}
+
+.assessment-focus {
+  background-color: #e9ebfe;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.empty-image {
+  background-color: #d9d9d9;
+  height: 500px;
+  width: 60%;
+  border-radius: 40px;
+
+  @include md-down {
+    width: 80%;
+  }
+}
+
+.assement-category {
+  display: flex;
+}
+
+.card-container {
+  @include md-tab-down {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../helper/index";
+
+.model-description{
+    .model-description__title{
+        font-size: 52px;
+        font-weight: 800;
+        color:  #101534;
+        line-height: 64px;
+        margin-bottom: 10px;
+        
+    }
+
+    .model-description__text{
+        font-size: 27px;
+        font-weight: 600;
+        color: #23329B;
+        line-height: 32px;
+        margin-bottom: 20px
+    }
+
+    .model-description__description{
+        font-size: 18px;
+        font-weight: 400;
+        color: #767B9C;
+        line-height: 32px;
+        margin-bottom: 20px
+    }
+
+    .model-description__container{
+        display: flex;
+        padding: 100px;
+        gap: 20px;
+
+        @include md-down{
+            flex-direction: column;
+        }
+    }
+
+    .model-description__bullets{
+        font-size: 20px;
+        font-weight: 700;
+        color: #101534;
+        line-height: 40px;
+        margin-bottom: 20px
+    }
+}
