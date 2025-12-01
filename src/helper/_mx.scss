@@ -1,0 +1,181 @@
+// Small devices (Mobile only) >= 480px
+@mixin xs {
+  @media (min-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+// Small devices (Mobile only) <= 480px
+@mixin xs-down {
+  @media (max-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+// Small devices (Mobile & Tab) >= 600px
+@mixin sm {
+  @media screen and (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Small devices (Mobile & Tab) <= 600px
+@mixin sm-down {
+  @media screen and (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Tab devices (Mobile & Tab) >= 767px
+@mixin md-tab {
+  @media screen and (min-width: #{$screen-md-tab}) {
+    @content;
+  }
+}
+
+// Mobile devices <= 767px
+@mixin md-tab-down {
+  @media screen and (max-width: #{$screen-md-tab}) {
+    @content;
+  }
+}
+
+// Medium devices >= 900px
+@mixin md {
+  @media screen and (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Medium devices <= 900px
+@mixin md-down {
+  @media screen and (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Medium desktop >= 1024px
+@mixin lmd {
+  @media screen and (min-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Medium desktop <= 1023px
+@mixin lmd-down {
+  @media screen and (max-width: #{$screen-md-max - 1}) {
+    @content;
+  }
+}
+
+// Large-mid devices >= 1200px
+@mixin lg-min {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Large-mid devices < 1200px
+@mixin lg-min-down {
+  @media (max-width: #{$screen-lg-min - 1}) {
+    @content;
+  }
+}
+
+// Large devices >= 1440px
+@mixin lg {
+  @media (min-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// Large devices <= 1440px
+@mixin lg-down {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// Extra large devices >= 1920px
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Extra large devices <= 1920px
+@mixin xl-down {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin fontStyle($size: false, $weight: false, $lineHeight: false, $color: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lineHeight {
+    line-height: $lineHeight;
+  }
+  @if $color {
+    color: $color;
+  }
+}
+
+@mixin set-all-width($width) {
+  width: $width;
+  min-width: $width;
+  max-width: $width;
+}
+
+@mixin set-all-height($height) {
+  height: $height;
+  min-height: $height;
+  max-height: $height;
+}
+
+@mixin alignCentre {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin overflowEllipse {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin lineClamp($lineCount: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lineCount;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin filter($params...) {
+  -webkit-filter: $params;
+  -moz-filter: $params;
+  filter: $params;
+}
+
+@mixin overfow-y-styling {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin overfow-x-styling {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
